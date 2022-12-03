@@ -1,41 +1,43 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js 13!</a>
+          This is the website I&apos;m using to participate in{" "}
+          <a href="https://react.holiday/">React Holiday 2022!</a>
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>app/page.tsx</code>
+          You can follow my progress on GitHub:{" "}
+          <a href="https://github.com/mknepprath/react-holiday-2022">
+            mknepprath/react-holiday-22
+          </a>
+          .
         </p>
 
         <div className={styles.grid}>
-          <a href="https://beta.nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js 13</p>
+          <a href="https://nextjs.org/blog/next-13" className={styles.card}>
+            <h2>Next 13 &rarr;</h2>
+            <p>Read about the recent updates.</p>
+          </a>
+
+          <a href="https://discord.gg/lunchdev" className={styles.card}>
+            <h2>Discord &rarr;</h2>
+            <p>Join the conversation in Discord.</p>
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Explore the Next.js 13 playground.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates/next.js/app-directory?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://mastodon.social/@mknepprath"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.card}
           >
-            <h2>Deploy &rarr;</h2>
-            <p>Deploy your Next.js site to a public URL with Vercel.</p>
+            <h2>Mastodon &rarr;</h2>
+            <p>Follow me on Mastodon. Why not?</p>
           </a>
         </div>
       </main>
@@ -46,12 +48,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
     </div>
-  )
+  );
 }
