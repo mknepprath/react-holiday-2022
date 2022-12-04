@@ -1,6 +1,9 @@
 import React from "react";
 
+import Timer from "./timer";
+
 export default function AboutPage() {
+  console.log("where does this log?");
   return (
     <div>
       <h1>About Michael Knepprath</h1>
@@ -18,6 +21,10 @@ export default function AboutPage() {
         side projects related to technology, design, film, video games, and so
         on.
       </p>
+
+      <span>
+        This time is from a a client component: <Timer />
+      </span>
     </div>
   );
 }

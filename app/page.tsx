@@ -31,13 +31,13 @@ export default function Home() {
           </a>
 
           <a
-            href="https://mastodon.social/@mknepprath"
+            href="/about"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.card}
           >
-            <h2>Mastodon &rarr;</h2>
-            <p>Follow me on Mastodon. Why not?</p>
+            <h2>About &rarr;</h2>
+            <p>Learn more about me, if you want.</p>
           </a>
         </div>
       </main>
