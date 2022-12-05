@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 import Timer from "./timer";
@@ -18,8 +19,8 @@ export default function AboutPage() {
         <a href="https://www.walmartlabs.com">Walmart</a> (prev.{" "}
         <a href="https://hyper.online">Hyper</a>,{" "}
         <a href="https://whcc.com">WHCC</a>). He loves his family and working on
-        side projects related to technology, design, film, video games, and so
-        on.
+        side projects related to technology, design,{" "}
+        <Link href="/about/film">film</Link>, video games, and so on.
       </p>
 
       <span>

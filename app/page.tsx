@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import styles from "./page.module.css";
 
@@ -30,15 +31,10 @@ export default function Home() {
             <p>Join the conversation in Discord.</p>
           </a>
 
-          <a
-            href="/about"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
+          <Link href="/about" className={styles.card}>
             <h2>About &rarr;</h2>
             <p>Learn more about me, if you want.</p>
-          </a>
+          </Link>
         </div>
       </main>
 
