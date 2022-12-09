@@ -26,14 +26,14 @@ export default function Home() {
             <p>Read about the recent updates.</p>
           </a>
 
-          <a href="https://discord.gg/lunchdev" className={styles.card}>
-            <h2>Discord &rarr;</h2>
-            <p>Join the conversation in Discord.</p>
-          </a>
-
           <Link href="/about" className={styles.card}>
             <h2>About &rarr;</h2>
             <p>Learn more about me, if you want.</p>
+          </Link>
+
+          <Link href="/hello" className={styles.card}>
+            <h2>Hello &rarr;</h2>
+            <p>The result of React Holiday #8.</p>
           </Link>
         </div>
       </main>
