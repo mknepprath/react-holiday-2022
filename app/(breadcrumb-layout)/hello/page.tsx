@@ -1,5 +1,5 @@
 export default async function HelloPage() {
-  let req = await fetch("http://localhost:3000/api/hello");
+  let req = await fetch(`${process.env.BASE_URL}/api/hello`);
   let res = await req.json();
 
   // proc the loading state
