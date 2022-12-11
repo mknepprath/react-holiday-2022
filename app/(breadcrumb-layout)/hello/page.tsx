@@ -4,7 +4,7 @@ interface PageProps {
 
 export default async function HelloPage({ searchParams }: PageProps) {
   // let res = await fetch(`${process.env.BASE_URL}/api/hello`);
-  let res = await fetch(`https://httpstat.us/${searchParams?.code || 500}`);
+  let res = await fetch(`https://httpstat.us/${searchParams?.code || 200}`);
 
   // fake the loading state
   await new Promise((resolve) => setTimeout(resolve, 1000));
